@@ -1,0 +1,7 @@
+# YouTube Downloader Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core dependencies
+yt-dlp
+tqdm
+requests

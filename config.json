@@ -1,0 +1,11 @@
+{
+  "max_parallel_downloads": 2,
+  "default_video_format": "mp4",
+  "default_audio_format": "mp3",
+  "default_video_quality": "720p",
+  "default_audio_quality": "192k",
+  "auto_update_ytdlp": true,
+  "download_subtitles": false,
+  "embed_thumbnail": false,
+  "write_metadata": true
+}
