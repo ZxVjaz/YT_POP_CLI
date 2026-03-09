@@ -1,7 +1,7 @@
 # YT_POP_CLI 🎥
 **YouTube POP Command Line Downloader**
 
-A simple command line interface youtube downloader. Design to help people who want to use yt-dlp.
+A simple command line interface youtube downloader for windows. Design to help people who want to use yt-dlp.
 
 > [!NOTE]  
 > This project is 80% made by kimi k2.5 ( Artificial Intelligence )
