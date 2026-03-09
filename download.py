@@ -209,14 +209,6 @@ class YouTubeDownloader:
         if hours > 0:
             return f"{hours}:{minutes:02d}:{secs:02d}"
         return f"{minutes}:{secs:02d}"
-    def _format_size(self, size_bytes: int) -> str:
-        if not size_bytes:
-            return "Unknown"
-        for unit in ["B", "KB", "MB", "GB"]:
-            if size_bytes < 1024:
-                return f"{size_bytes:.1f} {unit}"
-            size_bytes /= 1024
-        return f"{size_bytes:.1f} TB"
 
     def _get_unique_folder_name(self, base_path: Path, folder_name: str) -> Path:
         folder_path = base_path / folder_name
@@ -836,8 +828,7 @@ class YouTubeDownloader:
 
                 print("\nAvailable resolutions:")
                 for i, f in enumerate(formats, 1):
-                    size = self._format_size(f.get("filesize", 0))
-                    print(f"{i}. {f['resolution']} ({size})")
+                    print(f"{i}. {f['resolution']}")
 
                 try:
                     res_choice = int(input("\nSelect resolution: "))
@@ -857,8 +848,7 @@ class YouTubeDownloader:
 
                 print("\nAvailable qualities:")
                 for i, f in enumerate(formats, 1):
-                    size = self._format_size(f.get("filesize", 0))
-                    print(f"{i}. {f['quality']} ({size})")
+                    print(f"{i}. {f['quality']}")
 
                 try:
                     qual_choice = int(input("\nSelect quality: "))

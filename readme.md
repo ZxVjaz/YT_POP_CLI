@@ -23,8 +23,9 @@ A simple command line interface youtube downloader for windows. Design to help p
 You don't need to manually install all dependencies. Simply use the provided launcher:
 
 1.  Download python 3.8+ from [python.org](https://www.python.org/downloads/) or microsoft store
-2.  Install dependency from [yt-dlp github](https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#installation) and [ffmpeg official gyandev](https://www.gyan.dev/ffmpeg/builds/).
-3.  Clone or download this repository.
+2.  Clone or download this repository.
+3.  Create bin folder
+3.  Install dependency from [yt-dlp github](https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#installation) and [ffmpeg essential official gyandev](https://www.gyan.dev/ffmpeg/builds/). and place yt-dlp , ffprobe & ffmpeg ( you can find it on bin folder of ffmpeg ) in bin folder
 4.  Double-click **`run.bat`**. 
 5.  The script will:
     * Create a virtual environment if it doesn't exist. 
